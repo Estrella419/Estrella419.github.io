@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{margin:0;padding:0;box-sizing:border-box;list-style:none;}
+.banner-wrap{
+  width:90%;
+  max-width:960px;
+  margin:30px auto;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.banner-img-box{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+
+.left-arrow{
+  position:absolute;
+  left:10px;
+}
+.right-arrow{
+  position:absolute;
+  right:10px;
+}
+.arrow img{
+  width:60%;
+}
+.arrow{
+    width: 60px;
+    height: 60px;
+    background: rgba(64, 166, 176, 0.7);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.img-item{
+  flex:1;
+}
+.img-item img{
+  width:100%;
+  display:block;
+}
+.dot-list{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+}
+.dot{
+  width:18px;
+  height:18px;
+  cursor:pointer;
+}
+.dot img{
+  width:100%;
+  height:100%;
+  display:block;
+}
+</style>
+</head>
+<body>
+<div class="banner-wrap">
+  <div class="banner-img-box">
+    <div class="arrow left-arrow">
+      <img src="left.png" alt="左切换">
+    </div>
+    <div class="img-item">
+      <img src="banner1.jpg" alt="地球日焦点图">
+    </div>
+    <div class="arrow right-arrow">
+      <img src="right.png" alt="右切换">
+    </div>
+  </div>
+  <ul class="dot-list">
+    <li class="dot"><img src="point1.png"></li>
+    <li class="dot"><img src="point2.png"></li>
+    <li class="dot"><img src="point1.png"></li>
+    <li class="dot"><img src="point1.png"></li>
+  </ul>
+</div>
+</body>
+</html>
